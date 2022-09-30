@@ -1,0 +1,200 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+    border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+}
+.community_card{
+    display: flex;
+    flex-direction: column;
+    max-width: 21rem;
+    background-color: hsl(0, 0%, 100%);
+    height: 16rem;
+    border-radius: .4rem .4rem 0 0;
+}
+.community_card > h1{
+    color:  hsl(179, 62%, 43%);
+    margin-top: 2rem;
+    margin-left: 1rem;
+    font-weight: 700;
+}
+.community_card > h2{
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    margin-top: 1.6rem;
+    margin-left: 1rem;
+}
+.community_card > p{
+color: hsl(205, 11%, 55%);
+line-height: 1.5;
+text-align: left;
+margin-top: 1.5rem;
+margin-left: 1rem;
+}
+p{
+    font-weight: 400;
+    color: white
+}
+.subscription_card{
+    max-width: 21rem;
+    height: 16rem;
+    background-color:  hsl(179, 50%, 45%);
+    display: flex;
+    flex-direction: column;
+}
+.subscription_card > h2{
+    margin-top: 2rem;
+    margin-left: 1rem;
+    font-weight: 700;
+    color: white;
+}
+.subscription_card > p {
+    text-align: left;
+margin-top: .75rem;
+margin-left: 1rem;
+}
+.price-container{
+ list-style: none;
+ display: flex;
+}
+.price-container li:last-child{
+    margin-left: .5rem;
+    margin-top: 2rem;
+    color: rgb(201, 201, 201);
+}
+.price-tag{
+    margin-top: 1.5rem;
+margin-left: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color:white;
+}
+ .sign-up{
+    color: white;
+    text-decoration: none;
+    background-color: hsl(71, 73%, 54%);
+    padding: 1rem 7rem;
+    border-radius: .25rem;
+    margin: auto;
+}
+.why-us_card{
+    background-color:  hsl(179, 50%, 50%);
+    max-width: 21rem;
+    height: 16rem;
+border-radius:0 0 .4rem .4rem;
+display: flex;
+flex-direction: column;
+}
+.why-us_card > h2{
+    margin-left: 1.5rem;
+    margin-top:1.5rem;
+    color: white;
+}
+.why-us_card > p{
+  text-align: left;
+  margin-top: 1.5rem;
+  line-height: 1.5;
+  margin-right: 7rem;
+  margin-left: 1.5rem;
+}
+.attribution {
+    
+    font-size: 11px;
+    text-align: center;
+}
+footer > p{
+    color: black;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+@media (min-width: 640px){
+   main{
+    display: grid;
+    grid-template-columns:  22rem 22rem;
+    grid-template-areas: "header header";
+   }
+   .grid-col-span-header{
+    max-width: 44rem;
+    grid-area: header;
+   }
+   .grid-col-span-header > p, .grid-col-span-header > h1, .grid-col-span-header >h2{
+    margin-left: 2.5rem;
+    margin-right: 4rem;
+   }
+   .grid-col-span-left > h2 , .grid-col-span-left > p, .price-tag{
+    margin-left: 2.5rem;
+    margin-right: 4rem;
+   }
+   .grid-col-span-left > .price-container > li{
+    margin-right: .3rem;
+
+   }
+   .grid-col-span-header > h1{
+    margin-top: 3rem;
+    font-size: 1.7rem;
+   }
+   .grid-col-span-header> h2{
+    margin-top: 1.9rem;
+    font-size: 1.2rem;
+   }
+   .grid-col-span-header > p{
+    margin-top: 1rem;
+   }
+   .grid-col-span-right > p , .grid-col-span-right > h2{
+    margin-right: 7rem;
+    margin-left: 2.5rem;
+   }
+    .grid-col-span-right{
+        max-width: 22rem;
+        border-radius:0 0 .4rem 0;
+    }
+   .grid-col-span-left{
+    border-radius:0 0 0 .4rem;
+  max-width: 22rem;
+  }
+}
